@@ -1,12 +1,12 @@
 
 
-print("✅ Script is running")
+print("Script is running")
 
 def main():
-    print("Script started...")  # <-- Add this line
+    print("Script started...")  
     file_path = input("Enter path to the Sage-exported CSV file: ")
     print("📂 Loading data from:", file_path) 
-# Import the pandas library so we can work with CSV data and perform data analysis
+# Import the pandas library so I can work with CSV data and perform data analysis
 import pandas as pd
 
 # Define a function to load CSV data
@@ -16,7 +16,7 @@ def load_data(file_path):
     If it fails, it prints an error message and returns None.
     """
     try:
-        df = pd.read_csv(file_path)  # read the CSV into a DataFrame
+        df = pd.read_csv(file_path)  # This line reads my CSV into a DataFrame
         print("Data loaded successfully.")
         return df
     except Exception as e:
@@ -42,7 +42,7 @@ def clean_data(df):
     df = df.dropna(subset=['amount'])
     return df
 
-# Define a function to analyze the data
+# Define a function to analyze my data
 def analyze_data(df):
     """
     Calculates and returns a summary dictionary:
@@ -87,7 +87,7 @@ def export_summary(summary, file_path='financial_summary.txt'):
             f.write(f"{key}: {value}\n")
     print("📄 Summary exported to", file_path)
 
-# Define the main function that will run when you execute the script
+# Define the main function that will run when I execute the script
 def main():
     # Ask the user for the CSV file path
     file_path = input("Enter path to the Sage-exported CSV file: ")
