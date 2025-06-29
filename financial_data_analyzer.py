@@ -3,7 +3,7 @@
 print("✅ Script is running")
 
 def main():
-    print("🚀 Script started...")  # <-- Add this line
+    print("Script started...")  # <-- Add this line
     file_path = input("Enter path to the Sage-exported CSV file: ")
     print("📂 Loading data from:", file_path) 
 # Import the pandas library so we can work with CSV data and perform data analysis
@@ -17,10 +17,10 @@ def load_data(file_path):
     """
     try:
         df = pd.read_csv(file_path)  # read the CSV into a DataFrame
-        print("✅ Data loaded successfully.")
+        print("Data loaded successfully.")
         return df
     except Exception as e:
-        print(f"❌ Error loading data: {e}")
+        print(f"Error loading data: {e}")
         return None
 
 # Define a function to clean the data
