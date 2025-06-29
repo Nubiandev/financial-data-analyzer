@@ -1,0 +1,4 @@
+total_revenue: 11000
+total_expenses: -9800
+net_profit: 1200
+top_expense_categories: {'Utilities': -2500, 'Marketing': -2000, 'Rent': -1500, 'Travel': -1200, 'Supplies': -800}
